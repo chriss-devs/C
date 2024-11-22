@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>preview</title>
+    <link rel="stylesheet" href="styles1.css">
+    <style>
+      h1 {
+          width: 50%;        
+          margin: 0 auto;   
+          text-align: center; 
+          height: 200px;
+          font-family: 'title-font', sans-serif;
+          font-size: large;
+      }
+      #redirect-button {
+            margin-top: 20px; 
+            padding: 130px 170px; 
+            border: none; 
+            border-radius: 5px; 
+            background-color: #007bff; 
+            color: white; 
+            cursor: pointer; 
+            font-size: 16px; 
+            display: block; /* Ensures the button is centered in the container */
+            margin-left: auto; 
+            margin-right: auto; 
+        }
+
+        #redirect-button:hover {
+            background-color: #0056b3; 
+        }
+  </style>
+</head>
+<body>
+    <div class="container">
+      <h1 class="p">open the window </h1>
+        <div class="window">
+          <div class="frame">
+            <div class="snow">
+              <div class="snowflake1"></div>
+              <div class="snowflake2"></div>
+              <div class="snowflake3"></div>
+              <div class="snowflake4"></div>
+              <div class="snowflake5"></div>
+            </div>
+            <div class="hills"></div>
+            <div class="tree"></div>
+            <div class="tree2"></div>
+            <div class="tree3"></div>
+            <div class="tree4"></div>
+            <div class="shine"></div>
+          </div>
+          <div class="sill"></div>
+          <div class="knob"></div>
+          <div class="mug"></div>
+          <div id="up" class="steam"></div>
+          <div id="up" class="steam2"></div>
+          <div id="up" class="steam3"></div>
+        </div>
+
+      </div>
+      <button id="redirect-button"></button>
+    </div>
+
+    <script>
+        document.getElementById('redirect-button').addEventListener('click', function() {
+            window.location.href = 'christmas-tree.html'; // Replace with your desired URL
+        });
+    </script>
+</body>
+</html>

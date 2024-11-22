@@ -1,0 +1,394 @@
+@font-face {
+  font-family: 'title-font';
+  src: url(title-font.ttf);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #48cae4b4;
+  }
+
+  .h1 {
+    font-family: 'title-font', sans-serif;
+  }
+
+  .container {
+    position: relative;
+  }
+  .window {
+    position: relative;
+  }
+  
+  .frame {
+    position: relative;
+    width: 350px;
+    height: 250px;
+    border: 5px solid #e9ecef;
+    background-color: #48cae4;
+    overflow:hidden;
+  }
+  
+  .hills {
+    position: absolute;
+    background-color: #90e0ef;
+    width: 550px;
+    height:250px;
+    border-radius:50%;
+    top:80px;
+    left:-100px;
+  }
+  
+  .hills:before {
+    position: absolute;
+    content:"";
+    background-color: #ade8f4;
+    width: 1000px;
+    height:250px;
+    border-radius:50%;
+    left:50px;
+    top:20px;
+  }
+  
+  .hills:after {
+    content:"";
+    position: absolute;
+    background-color: #caf0f8;
+    width: 800px;
+    height:250px;
+    border-radius:50%;
+    left:-200px;
+    top:100px;
+  }
+  
+  .tree {
+    position: absolute;
+    width:3px;
+    height:15px;
+    background-color: #432818;
+    top:170px;
+    left:75px;
+  }
+  
+  .tree:before {
+    content:"";
+    position: absolute;
+    border-bottom:40px solid #2c6e49;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    width:0;
+    height:0;
+    left:-8px;
+    top:-30px;
+  }
+  
+  .tree:after {
+    content:"";
+    position: absolute;
+    width:2px;
+    height:15px;
+    background-color: #432818;
+    top:-60px;
+    left:75px;
+  }
+  
+  .tree2 {
+    position: absolute;
+    border-bottom:35px solid #4c956c;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    width:0;
+    height:0;
+    top:85px;
+    left:144px;
+  }
+  
+  .tree2:before {
+    content:"";
+    position: absolute;
+    width:1.5px;
+    height:15px;
+    background-color: #432818;
+    top:-12px;
+    left:115px;
+  }
+  
+  .tree2:after {
+    content:"";
+    position: absolute;
+    border-bottom:27px solid #2c6e49;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    width:0;
+    height:0;
+    top:-28px;
+    left:110px;
+  }
+  
+  .tree3 {
+    position: absolute;
+    width:1.5px;
+    height:15px;
+    background-color: #432818;
+    top:85px;
+    left:25px;
+  }
+  
+  .tree3:before {
+    content:"";
+    position: absolute;
+    border-bottom:20px solid #4c956c;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    width:0;
+    height:0;
+    top:-8px;
+    left:-5px;
+  }
+  
+  .tree3:after {
+    content:"";
+    position: absolute;
+    width:1.5px;
+    height:15px;
+    background-color: #432818;
+    left:17px;
+    top:-5px;
+  }
+  
+  .tree4 {
+    position: absolute;
+    border-bottom:27px solid #2c6e49;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    width:0;
+    height:0;
+    top:64px;
+    left:37px;
+  }
+  
+  .tree4:before {
+    content:"";
+    position: absolute;
+    width:1.5px;
+    height:15px;
+    background-color: #432818;
+    left:147px;
+    top:40px;
+  }
+  
+  .tree4:after {
+    content:"";
+    position: absolute;
+    border-bottom:27px solid #2c6e49;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    width:0;
+    height:0;
+    top:23px;
+    left:142px;
+  }
+  
+  .shine {
+    position: absolute;
+    width: 200px;
+    height:100px;
+    background-color: rgba(255,255,255,0.2);
+    transform: skew(-20deg,-50deg);
+    top:50px;
+    left:-10px;
+  }
+  
+  .shine:before {
+    content:"";
+    position: absolute;
+    width: 200px;
+    height:100px;
+    background-color: rgba(255,255,255,0.2);
+    top:400px;
+    left:320px;
+  }
+  
+  .sill {
+    position: absolute;
+    left:-20px;
+    width:400px;
+    height:10px;
+    background-color: #c5c3c6;
+    z-index:15;
+    box-shadow: 5px 7px 0 rgba(0,0,0,0.05);
+  }
+  
+  .sill:before {
+    width:340px;
+    height:240px;
+    border: 5px solid white;
+    content:"";
+    position: absolute;
+    top:-300px;
+    left:25px;
+    top:-255px;
+    box-shadow:inset 5px 5px rgba(0,0,0,0.05);
+  }
+  
+  .sill:after {
+    content:"";
+    position: absolute;
+    background-color: white;
+    height: 240px;
+    width:10px;
+    left:193px;
+    top:-250px;
+    box-shadow:5px 1px rgba(0,0,0,0.05);
+  }
+  
+  .knob {
+    position: absolute;
+    width:30px;
+    height:10px;
+    border-radius:10px;
+    background-color: #c5c3c6;
+    z-index:20;
+    top:135px;
+    left:175px;
+  }
+  .mug {
+    position: absolute;
+    background-color: #db504a;
+    width:28px;
+    height: 35px;
+    border-radius:5px 5px 10px 10px;
+    z-index:25;
+    top:225px;
+    left:250px;
+    box-shadow:inset -5px -5px rgba(0,0,0,0.05);
+  }
+  
+  .mug:before {
+    content:"";
+    position: absolute;
+    border:5px solid #db504a;
+    width:15px;
+    height:15px;
+    border-radius:50%;
+    left:-10px;
+    top:5px;
+  }
+  
+  #up {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #F3F1E7;
+    border-radius: 50%;
+    opacity: 0;
+    top: 220px;
+    left: 255px;
+    z-index:20;
+  }
+  
+  .steam {
+    animation: up 3s ease-out infinite; 
+  }
+  
+  .steam2 {
+    animation: up 2s ease-out infinite; 
+    animation-delay:0.5s;
+  }
+  
+  .steam2:before {
+    content:"";
+    position: absolute;
+    left:5px;
+    width:15px;
+    height:15px;
+    background-color: #fff;
+    border-radius:50%;
+    top:20px;
+  }
+  .snow {
+    position: absolute;
+  }
+  
+  .snowflake1, .snowflake2, .snowflake3, .snowflake4, .snowflake5 {
+    width:5px;
+    height:5px;
+    border-radius:50%;
+    opacity:0.7;
+    position: absolute;
+    z-index:10;
+    background-color: white;
+  }
+  
+  .snowflake1 {
+    animation: fall 4s linear infinite;
+    box-shadow: 100px -10px white, 200px -5px white, -20px -35px white, 250px -50px white, 240px -150px white, 40px -130px white;
+    left:50px;
+  }
+  
+  .snowflake2 {
+    animation: fall 5s linear infinite;
+    animation-delay:2s;
+    top:-55px;
+    box-shadow: 75px -10px white, 163px -10px white, -20px -35px white, 250px -50px white, 240px -150px white, 40px -130px white;
+    left:30px;
+  }
+  
+  .snowflake3 {
+    animation: fall 4.5s linear infinite;
+    animation-delay:1s;
+    top:-85px;
+    box-shadow: 90px -10px white, 180px -15px white, -20px -35px white, 230px -50px white, 10px -140px white, 70px -120px white;
+    left:60px;
+  }
+  
+  .snowflake4 {
+    animation: fall 3.5s linear infinite;
+    top:-115px;
+    box-shadow: 70px -20px white, 140px -5px white, -20px -35px white, 230px -50px white, 110px -80px white, 99px -25 white;
+    left:80px;
+  }
+  
+  .snowflake5 {
+    animation: fall 2.9s linear infinite;
+    animation-delay:3s;
+    top:-145px;
+    box-shadow: 190px -10px white, 280px -15px white, 320px -35px white, 230px -50px white, 113px -100px white, 256px -50px white, 116px -50px white;
+    left:-5px;
+  }
+  @keyframes fall {
+    100% {transform: translateY(400px);}
+}
+@keyframes up {
+    0%{
+      transform: translateY(0) scale(0.5);
+      opacity: 0.9;
+    }
+    100%{
+      transform: translateY(-50px) scale(1);
+      opacity: 0;
+    }
+  }
+
+  #redirect-button {
+    opacity: 0;
+    position: absolute; /* Usa posicionamiento absoluto para colocar el botón sobre el objeto */
+    top: 430px; /* 50% desde la parte superior del contenedor */
+    left: 210px; /* 50% desde la izquierda del contenedor */
+    transform: translate(-50%, -50%); /* Centra el botón en el medio del objeto */
+    margin-top: 20px; /* Añade espacio adicional si es necesario */
+    padding: 1000px 1000px; /* Añade padding */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Esquinas redondeadas */
+    background-color: transparent; /* Color del botón */
+    color: white; /* Color del texto */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    font-size: 16px; /* Tamaño de la fuente */
+    z-index: 1000;
+}
+
+#redirect-button:hover {
+    background-color: #0056b3; /* Darken button color on hover */
+}
